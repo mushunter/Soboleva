@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Soboleva"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="360" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42"/>
+            <RowDefinition/>
+            <RowDefinition Height="42"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="Aquamarine" Grid.Row="2" StrokeThickness="0"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,10,0,10" Width="75"/>
+        <Frame x:Name="MainFrame" Content="Frame" Source="Pages/AuthPage.xaml" Grid.Row="1"/>
     </Grid>
 </Window>
