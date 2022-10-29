@@ -24,5 +24,14 @@ namespace Soboleva.Pages
         {
             InitializeComponent();
         }
+
+        private void ButtonEnter_Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(TextBoxLogin.Text) || string.IsNullOrEmpty(PasswordBox.Password))
+            {
+                MessageBox.Show("Введите логин и пароль!");
+                return;
+            }
+        }
     }
 }
