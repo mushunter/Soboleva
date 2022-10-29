@@ -14,6 +14,6 @@
         </Grid.RowDefinitions>
         <Rectangle Fill="Aquamarine" Grid.Row="2" StrokeThickness="0"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="10,10,0,10" Width="75"/>
-        <Frame x:Name="MainFrame" Content="Frame" Source="Pages/AuthPage.xaml" Grid.Row="1"/>
+        <Frame x:Name="MainFrame" Content="Frame" Source="Pages/CustomerMenu.xaml" Grid.Row="1"/>
     </Grid>
 </Window>
