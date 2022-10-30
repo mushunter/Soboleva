@@ -16,22 +16,27 @@ using System.Windows.Shapes;
 namespace Soboleva.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthPage.xaml
+    /// Логика взаимодействия для CustomerMenu.xaml
     /// </summary>
-    public partial class AuthPage : Page
+    public partial class CustomerMenu : Page
     {
-        public AuthPage()
+        public CustomerMenu()
         {
             InitializeComponent();
         }
 
-        private void ButtonEnter_Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonPage1_OnClick(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(TextBoxLogin.Text) || string.IsNullOrEmpty(PasswordBox.Password))
-            {
-                MessageBox.Show("Введите логин и пароль!");
-                return;
-            }
+        }
+
+        private void ButtonPage2_OnClick(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new AuthPage());
+        }
+
+        private void ButtonPage3_OnClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
